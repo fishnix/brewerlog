@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Author:</b>
+  <%= @recipe.author %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @recipe.title %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @recipe.note %>
+</p>
+
+<p>
+  <b>Ingredients:</b>
+</p>
+
+<%= render :partial => "ingredients/ingredient", :locals => { :showdelete => true } %>
+
+<p>
+	<b>Add Ingredients:</b>
+</p>
+
+<%= render :partial => "ingredients/form" %>
+
+<br />
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>

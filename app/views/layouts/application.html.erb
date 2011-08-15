@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brewerlog</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<header>
+	<%= render :partial => "layouts/header" %>
+</header>
+
+<nav>
+	<%= render :partial => "layouts/mainnav" %>
+</nav>
+
+<section id="intro">
+	<%= render :partial => "layouts/intro" %>
+</section>
+
+<section id="content">
+	<%= yield %>
+</section>
+
+<footer>
+	<%= render :partial => "layouts/footer" %>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Makeshift CSS Reset */
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, aside, nav, article {
+	display: block;
+}
+
+body {
+	margin: 0 auto;
+	width: 940px;
+	font: 13px/22px Helvetica, Arial, sans-serif;
+	background: #f0f0f0;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 44px;
+	padding: 22px 0;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 22px;
+	padding: 11px 0;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+nav {
+	position: absolute;
+	width: 940px;
+	background: #357EC7 url("nav_background");
+	border-radius: 5px;
+}
+
+nav ul {
+	margin: 0 auto;
+	width: 940px;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	margin-right: 20px;
+	width: 140px;
+	font-size: 14px;
+	line-height: 44px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul li a:hover {
+	color: #000000;
+}
+
+nav ul li.selected a {
+	color: #fff;
+}
+
+#intro {
+	margin-top: 66px;
+	padding: 22px;
+	background: #357EC7 url("intro_background.png") repeat-x;
+	background-size: 100%;
+	border-radius: 12px;
+}
+
+#intro {
+	...
+	/* Background-size not implemented yet */
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-khtml-background-size: 100%;
+
+	/* Border-radius not implemented yet */
+ 	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+}
+
+#intro h2, #intro p {
+	width: 336px;
+}
+
+#intro h2 {
+	padding: 0 0 22px 0;
+	font-weight: normal
+	color: #fff;
+}
+
+#intro p {
+	padding: 0;
+	color: #d9f499;
+}
+
+#content {
+}
+
+#recipe {	
+  display: table;
+}
+
+#recipe h2 {
+  padding: 0 0 22px 0;
+  font-weight: normal
+  color: #fff;
+}
+
+#recipehead {
+  padding-left: 22px;
+  padding-bottom: 0px;
+  background: #8fcaef;
+  background-size: 100%;
+  border-radius: 22px;  
+}
+
+#recipefoot {
+  padding-left: 22px;
+  padding-bottom: 0px;
+  background: #8fcaef;
+  background-size: 100%;
+  border-radius: 22px;  
+}
+
+#maincontent {
+  background: #caef8f;
+	background-size: 100%;
+	border-radius: 12px;
+	display: table-cell;
+	width: 620px;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+#recipedetails {
+  background: #e4f6c7;
+  background-size: 100%;
+  border-radius: 12px;
+	display: table-cell;
+	width: 300px;
+}
+
+#recipedetails ul {
+	margin: 0 auto;
+	list-style: none;
+}
+
+#recipedetails ul li {
+	display: block;
+	margin-right: 20px;
+	width: 140px;
+	font-size: 14px;
+	line-height: 44px;
+	text-align: left;
+	text-decoration: none;
+	color: #777;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

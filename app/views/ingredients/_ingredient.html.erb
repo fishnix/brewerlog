@@ -1,0 +1,10 @@
+<ul>
+	<% @recipe.ingredients.each do |ingredient| %>
+		<li>
+			<%= ingredient.quantity %> <%= ingredient.item %>
+			<% if defined?(showdelete) && showdelete %>
+				<%= link_to 'Delete', [ingredient.recipe, ingredient], :confirm => 'Are you sure?', :method => :delete %>
+			<% end %>
+		</li>
+	<% end %>
+</ul>
