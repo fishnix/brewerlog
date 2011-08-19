@@ -1,6 +1,8 @@
 Brewerlog::Application.routes.draw do
   #resources :ingredients
 
+  root :to => "home#index"
+
   resources :recipes do 
     resources :ingredients
   end

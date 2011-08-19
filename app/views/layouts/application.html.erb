@@ -8,17 +8,15 @@
 </head>
 <body>
 
-<header>
-	<%= render :partial => "layouts/header" %>
-</header>
+<div id="headernav">
+	<header id="headernavheader">
+		<%= render :partial => "layouts/header" %>
+	</header>
 
-<nav>
-	<%= render :partial => "layouts/mainnav" %>
-</nav>
-
-<section id="intro">
-	<%= render :partial => "layouts/intro" %>
-</section>
+	<nav>
+		<%= render :partial => "layouts/mainnav" %>
+	</nav>
+</div>
 
 <section id="content">
 	<%= yield %>

@@ -1,0 +1,43 @@
+#introborder {
+  background: #fff;
+  background-size: 100%;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+}
+
+#intro {
+	margin: 12px;
+	padding: 22px;
+	background: #151B8D;
+	background-size: 100%;
+	border-radius: 12px;
+}
+
+#intro {
+	/* Background-size not implemented yet */
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-khtml-background-size: 100%;
+
+	/* Border-radius not implemented yet */
+ 	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#intro h2, #intro p {
+	width: 336px;
+	color: #fff;
+}
+
+#intro h2 {
+	padding: 0 0 22px 0;
+	font-weight: normal
+	color: #fff;
+}
+
+#intro p {
+	padding: 0;
+	color: #fff;
+}
