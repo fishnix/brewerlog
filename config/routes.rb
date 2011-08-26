@@ -1,4 +1,6 @@
 Brewerlog::Application.routes.draw do
+  devise_for :users
+
   #resources :ingredients
 
   root :to => "home#index"

@@ -1,5 +1,12 @@
 <ul>
+	<% if user_signed_in? %>
+		<li><%= link_to('Logout', destroy_user_session_path, :method => 'delete') %></li>
+		<li><%= link_to "Recipes", :controller => "/recipes" %></li>
+		<li><%= link_to "New Recipe", :controller => "/recipes", :action => "new" %></li>
+	<% else %>
+	  <li>
+	  <%= link_to('Login', new_user_session_path)  %>  
+	  </li>
+	<% end %>
 	<li><%= link_to "Home", :root %></li>
-	<li><%= link_to "Recipes", :controller => "recipes" %></li>
-	<li><%= link_to "New Recipe", :controller => "recipes", :action => "new" %></li>
 </ul>

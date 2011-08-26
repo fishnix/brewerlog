@@ -5,6 +5,13 @@
 </section>
 
 <section id="login_signup">
-	<%= render :partial => "layouts/login" %>
-	<%= render :partial => "layouts/signup" %>
+	<% if user_signed_in? %>
+		<%= render :partial => "layouts/login" %>
+		<%= render :partial => "layouts/center_bottom" %>
+		<%= render :partial => "layouts/welcome_user" %>
+	<% else %>
+		<%= render :partial => "layouts/login" %>
+		<%= render :partial => "layouts/center_bottom" %>
+		<%= render :partial => "layouts/signup" %>
+	<% end %>
 </section>

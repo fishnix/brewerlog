@@ -1,0 +1,92 @@
+#login_signup {	
+  display: table;
+  margin-top: 12px;
+  background: #fff;
+  background-size: 100%;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  padding: 6px;
+  width: 100%;
+}
+
+#login {
+	background-size: 100%;
+	background: #151B8D;
+	border-radius: 5px;
+	display: table-cell;
+	width: 33%;
+	padding: 12px;
+}
+
+#center_bottom {
+  background-size: 100%;
+	border-radius: 12px;
+	display: table-cell;
+	width: 300px;
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#signup {
+	display: table-cell;
+	padding: 12px;
+	width: 33%;
+	background: #151B8D;
+	border-radius: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#signup img {
+  float: left;
+  padding: 0px;
+  margin-left: 24px;
+}
+
+#signup h1 {
+  display: inline;	
+  padding: 0px;
+  margin-right: 24px;
+}
+
+#signup a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#welcome_user {
+	display: table-cell;
+	padding: 12px;
+	width: 33%;
+	background: #151B8D;
+	border-radius: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#welcome_user img {
+  float: left;
+  padding: 0px;
+  margin-left: 24px;
+}
+
+#welcome_user h1 {
+  display: inline;	
+  padding: 0px;
+  vertical-align: middle;
+  color: #fff;
+}
+
+#welcome_user h3 {
+  padding: 0px;
+  vertical-align: middle;
+  color: #fff;
+}
+
+#welcome_user a {
+	text-decoration: none;
+	color: #fff;
+}
