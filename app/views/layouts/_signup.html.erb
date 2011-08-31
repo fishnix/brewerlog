@@ -1,6 +1,6 @@
 <div id="signup">
-	<%= link_to "/users/sign_up" do %>
+	<%= link_to new_user_registration_path do %>
 		<%= image_tag "/images/signup_big.png", :size => "66x66" %>
 		<h1>Sign Up</h1>
-	<% end %>
+	<% end %> <h2>or <%= link_to "Sign In", new_user_session_path %>
 </div>
