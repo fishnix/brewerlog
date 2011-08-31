@@ -5,6 +5,8 @@ Brewerlog::Application.routes.draw do
 
   root :to => "home#index"
 
+  match "/recipes/my" => "recipes#my"
+
   resources :recipes do 
     resources :ingredients
   end

@@ -1,0 +1,33 @@
+<% if @recipes.nil? %>
+	<article class="recipe">
+		<div id="maincontent">
+			<p>No Recipes defined!  <%= link_to 'Create One', new_recipe_path %>
+		</div>
+	</article>
+<% else %>
+	<% @recipes.each do |recipe| %>
+		<article class="recipe">
+			<header id="recipehead">
+				<h2><%= recipe.title %></h2>
+			</header>
+
+			<div id="maincontent">
+				<p><%= recipe.note %></p>
+		  			<%= link_to 'Show', recipe %>
+		  			<%= link_to 'Edit', edit_recipe_path(recipe) %>
+		  			<%= link_to 'Destroy', recipe, :confirm => 'Are you sure?', :method => :delete %>
+			</div>
+	
+			<div id="recipedetails">
+				<% @recipe = recipe %>
+				<%= render :partial => "ingredients/ingredient" %>
+			</div>
+	
+			<footer id="recipefoot">
+				<h3>Submitted by <%= recipe.author %></h3>
+			</footer>
+	
+		</article>
+
+	<% end %>
+<% end %>

@@ -9,6 +9,18 @@ class RecipesController < ApplicationController
       format.xml  { render :xml => @recipes }
     end
   end
+  
+  # GET /recipes/my
+  # GET /recipes/my.xml
+  def my
+    @recipes = Recipe.find(:all, :conditions => [ "username = ?", current_user.username ] )
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @recipes }
+    end
+  end
+  
 
   # GET /recipes/1
   # GET /recipes/1.xml
